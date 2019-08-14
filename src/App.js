@@ -50,21 +50,19 @@ class App extends React.Component {
   render() {
     return (
     <div className="App">
-      <button onClick={() => {this.fetchHelper()}}>"This is a button"</button>
       <div>
-        Start:
-        <input type="text" ref={this.startLocation}></input>
+        <input className="input" placeholder="start here" type="text" ref={this.startLocation}></input>
       </div>
       <div>
-        End:
-        <input type="text" ref={this.endLocation}></input>
+        <input className="input" placeholder="end here" type="text" ref={this.endLocation}></input>
       </div>
+      <button className="button" onClick={() => {this.fetchHelper()}}>get my playlist</button>
       <div>
         {this.state.playlist.map(song => {
             return (
-              <div>
-                <span>{song.artist}</span> --
-                <span>{song.title}</span> 
+              <div className="songholder">
+                <span>{song.artist}</span> - 
+                <span className="song">{song.title}</span> 
                 <span>({formatDuration(song.duration)})</span>
               </div>
             );
