@@ -3,7 +3,7 @@
 }
 
 .button {
-  background: #de796f;
+  background:#f28d86;
   border: 0.09em solid white;
   border-radius: 1em;
   color: rgba(255, 255, 255, 0.5);
@@ -21,10 +21,10 @@
 }
 
 .input {
-  background: none;
+  background-color: #f3d7cc;
   border: 0.09em solid rgba(255, 255, 255, 0.25);
   border-radius: none;
-  color:#de796f;
+  color:white;
   letter-spacing: 0.1em;
   margin: 0 0.09em 0.09em 0.09em;
   padding: 0.35em 0 0.20em 0;
@@ -39,11 +39,11 @@
 
 .songholder {
   display: block;
-  background-color: lightgrey;
+  background-color:#f08080;
   border: 0.09em solid white;
   border-radius: 1em;
   width: auto;
-  color: white;
+  color: #f8b59b;
   letter-spacing: 0.1em;
   margin: 0 0.09em 0.09em 0.09em;
   padding: 0.35em 0 0.20em 0;
@@ -52,7 +52,7 @@
 }
 
 .song {
-  color:#de796f;
+  color:white;
 }
 
 
