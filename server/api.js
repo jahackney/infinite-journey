@@ -2,7 +2,6 @@ const fetch = require("node-fetch");
 
 const mapsApiKey = 'AIzaSyAQu3RJ2bGWHLs2sZmMaEREUCYBrK_GAEU';
 
-// const geoApiKey = 'AIzaSyAQu3RJ2bGWHLs2sZmMaEREUCYBrK_GAEU';
 
 const applyStateInfoToLocations = (stateArray) => {
   return applyStateInfoToLocationsHelper(stateArray, 0, stateArray.length);
@@ -50,22 +49,6 @@ const applyStateInfoToLocationsHelper = (stateArray, start, end) => {
   })
 };
 
-// const applyStateInfoToLocationsWORKING_JUST_FINE_DO_NOT_TOUCH = (stateArray) => {
-
-//   let locationPromises = [];
-//   for (let state of stateArray) {
-//     locationPromises.push(getStateFromLocation(state.latitude, state.longitude));
-//   }
-
-//   return Promise.all(locationPromises).then((states) => {
-//     for (let i = 0; i < states.length; ++i) {
-//       let { stateName, stateCode } = states[i];
-//       stateArray[i].stateName = stateName;
-//       stateArray[i].stateCode = stateCode;  
-//     }
-//     return stateArray;
-//   });
-// };
 
 const getStateFromLocation = (lat, lng) => {
   
